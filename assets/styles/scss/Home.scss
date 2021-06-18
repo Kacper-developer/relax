@@ -1,0 +1,94 @@
+//responsive design
+$phone: 0px;
+$tablet: 700px;
+$desktop: 1024px;
+
+//colors
+$perfectBlack: #262c31;
+$blueWhite: #edf2f4;
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+$lato: 'Lato';
+$montserrat: 'Montserrat';
+
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flexbox;
+
+    font-size: 14px;
+    color: hsl(212, 19%, 19%);
+    font-family: $lato;
+
+    overflow-x: hidden;
+
+
+
+    .container-fluid{
+      height: 100vh;
+      width: 100vw;
+
+      background: linear-gradient(hsla(0, 0%, 4%, 0.05), hsl(0, 0%, 4%)), url('../../images/wallpapers/wp1.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .inside-container{
+        background: transparent;
+        width: 100%;
+
+        .navbar{
+          background: transparent;
+
+          .burger{
+            cursor: pointer;
+
+            position: absolute;
+            top: 1rem;
+            right: 0;
+
+            .slash{
+              width: 35px;
+              height: 5px;
+
+              background: white;
+
+              border-radius: 365px;
+              margin-bottom: .4rem;
+            }
+          }
+        }
+
+        .center{
+          height: calc(100vh - 10rem);
+          width: 100vw;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          blockquote{
+           font-size: 4em;
+           letter-spacing: 4px;
+           font-weight: 900;
+
+           position: relative;
+           left: -1rem;
+           
+           cursor: default;
+           font-family: $montserrat;
+           color: rgba(156, 156, 156, 0.5);
+          }
+        }
+      }
+    }
+}

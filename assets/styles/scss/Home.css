@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flexbox;
+  font-size: 14px;
+  color: #27303a;
+  font-family: "Lato";
+  overflow-x: hidden;
+}
+body .container-fluid {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 10, 0.05)), to(#0a0a0a)), url("../../images/wallpapers/wp1.jpg");
+  background: linear-gradient(rgba(10, 10, 10, 0.05), #0a0a0a), url("../../images/wallpapers/wp1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container-fluid .inside-container {
+  background: transparent;
+  width: 100%;
+}
+body .container-fluid .inside-container .navbar {
+  background: transparent;
+}
+body .container-fluid .inside-container .navbar .burger {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+body .container-fluid .inside-container .navbar .burger .slash {
+  width: 35px;
+  height: 5px;
+  background: white;
+  border-radius: 365px;
+  margin-bottom: 0.4rem;
+}
+body .container-fluid .inside-container .center {
+  height: calc(100vh - 10rem);
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .container-fluid .inside-container .center blockquote {
+  font-size: 4em;
+  letter-spacing: 4px;
+  font-weight: 900;
+  position: relative;
+  left: -1rem;
+  cursor: default;
+  font-family: "Montserrat";
+  color: rgba(156, 156, 156, 0.5);
+}/*# sourceMappingURL=Home.css.map */
